@@ -6,6 +6,7 @@
 // header("Content-disposition: attachment; filename=\"" . basename($file_url) . "\""); 
 // readfile($file_url);
 
-echo "download sponsor doc!";
-
+  $filename="SponsorGuide.pdf";
+  header("Content-disposition: attachment;filename=$filename");
+  readfile($filename);
 ?>
