@@ -2,20 +2,20 @@ $('#countdown').countdown('2014/10/03', function(event) {
       $(this).html(event.strftime('%w weeks %d days <br /> %H:%M:%S'))
     })
     $(function() {
-      var objDistance = $('nav').offset().top;
+      var objDistance = $('#navigation').offset().top;
       $(window).scroll(function() {
         var myDistance = $(window).scrollTop();
         if (myDistance > objDistance){
-          $('nav').addClass('navbar-fixed-top');
+          $('#navigation').addClass('navbar-fixed-top');
         }
         if (objDistance > myDistance){
-          $('nav').removeClass('navbar-fixed-top');
+          $('#navigation').removeClass('navbar-fixed-top');
         }
       });
 
     })
       //smooth scrolling
-      $("nav ul li a[href^='#']").on('click', function(e) {
+      $("a[href^='#']").on('click', function(e) {
 
    // prevent default anchor click behavior
    e.preventDefault();
