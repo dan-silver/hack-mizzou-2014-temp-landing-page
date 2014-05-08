@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="row">
-      <div class="col-lg-4 col-lg-offset-4">
+        <div class="col-lg-4 col-lg-offset-4">
           <nav class="navbar navbar-default" role="navigation">
             <div class="container-fluid">
               <!-- Brand and toggle get grouped for better mobile display -->
@@ -116,6 +116,18 @@
   <script type="text/javascript">
     $('#countdown').countdown('2014/10/03', function(event) {
       $(this).html(event.strftime('%w weeks %d days <br /> %H:%M:%S'))
+    })
+    $(function() {
+      var objDistance = $('nav').offset().top;
+      $(window).scroll(function() {
+        var myDistance = $(window).scrollTop();
+        if (myDistance > objDistance){
+          $('nav').addClass('navbar-fixed-top');
+        }
+        if (objDistance > myDistance){
+          $('nav').removeClass('navbar-fixed-top');
+        }
+      });
     })
   </script>
 </body></html>
