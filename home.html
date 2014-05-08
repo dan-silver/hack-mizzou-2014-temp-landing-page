@@ -23,35 +23,60 @@
       <![endif]-->
     </head>
     <body>
-     <div id="wrapper">
-      <div class="container">
-       <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12">
-         <h1>HackMizzou 2014</h1>
-         <h2 class="subtitle">October 3-5 &middot; 400 Hackers &middot; 40 Hours</h2>
-         <div id="countdown">37 weeks 01 days <br> 07:27:21</div>
-         <form class="form-inline signup">
-           <a href="/sponsor" class="btn btn-theme">Sponsor Information</a>
-         </form>
+      <div id="wrapper">
+        <div class="container">
+         <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+           <h1>HackMizzou 2014</h1>
+           <h2 class="subtitle">October 3-5 &middot; 400 Hackers &middot; 40 Hours</h2>
+           <div id="countdown">37 weeks 01 days <br> 07:27:21</div>
+           <form class="form-inline signup">
+             <a href="/sponsor" class="btn btn-theme">Sponsor Information</a>
+           </form>
+         </div>
        </div>
-     </div>
-     <div class="row">
-      <div class="col-lg-6 col-lg-offset-3">
-        <p class="copyright"><a href="http://2013.hackmizzou.com/">HackMizzou 2013</a></p>
+       <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+          <p class="copyright"><a href="http://2013.hackmizzou.com/">HackMizzou 2013</a></p>
+        </div>
+      </div>
+      <div class="row">
+      <div class="col-lg-4 col-lg-offset-4">
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </div>
+        </nav>
       </div>
     </div>
   </div>
-</div>
-<div id="faq">
-  <div class="container">
-    <div class="row">
+  <div id="faq">
+    <div class="container">
+      <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
           <h2>FAQ</h2>
           
+        </div>
       </div>
-    </div>
-    <div class="row">
+      <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-4">
           <b>What is HackMizzou?</b>
@@ -76,21 +101,21 @@
           <p>We give your resumes to the tech companies sponsoring HackMizzou who are looking to hire awesome developers like you!</p>
           <b>I have a question that isn't on this list. Who should I contact?</b>
           <p>
-          Tweet to
+            Tweet to
             <a href="http://www.twitter.com/hackmizzou">@hackmizzou</a>
             or post on our
             <a href="https://www.facebook.com/HackMizzou?ref=br_tf">Facebook page</a>.
           </p>
         </div>
+      </div>
     </div>
   </div>
-</div>
-<script src="assets/js/jquery-1.10.2.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.countdown.min.js"></script>
-<script type="text/javascript">
-  $('#countdown').countdown('2014/10/03', function(event) {
-    $(this).html(event.strftime('%w weeks %d days <br /> %H:%M:%S'))
-  })
-</script>
+  <script src="assets/js/jquery-1.10.2.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.countdown.min.js"></script>
+  <script type="text/javascript">
+    $('#countdown').countdown('2014/10/03', function(event) {
+      $(this).html(event.strftime('%w weeks %d days <br /> %H:%M:%S'))
+    })
+  </script>
 </body></html>
