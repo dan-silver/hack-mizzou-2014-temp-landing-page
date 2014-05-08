@@ -57,8 +57,8 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                <li class="active"><a href="#faq">FAQ</a></li>
-                  <li><a href="#">Link</a></li>
+                  <li class="active"><a href="#faq">FAQ</a></li>
+                  <li><a href="#schedule">Schedule</a></li>
                 </ul>
               </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -110,45 +110,21 @@
       </div>
     </div>
   </div>
+  <div id="schedule">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h2>Schedule</h2>
+          <p>
+            The schedule will be posted soon. Stay tuned!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="assets/js/jquery-1.10.2.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/jquery.countdown.min.js"></script>
-  <script type="text/javascript">
-    $('#countdown').countdown('2014/10/03', function(event) {
-      $(this).html(event.strftime('%w weeks %d days <br /> %H:%M:%S'))
-    })
-    $(function() {
-      var objDistance = $('nav').offset().top;
-      $(window).scroll(function() {
-        var myDistance = $(window).scrollTop();
-        if (myDistance > objDistance){
-          $('nav').addClass('navbar-fixed-top');
-        }
-        if (objDistance > myDistance){
-          $('nav').removeClass('navbar-fixed-top');
-        }
-      });
-
-    })
-      //smooth scrolling
-      $("nav ul li a[href^='#']").on('click', function(e) {
-
-   // prevent default anchor click behavior
-   e.preventDefault();
-
-   // store hash
-   var hash = this.hash;
-
-   // animate
-   $('html, body').animate({
-     scrollTop: $(this.hash).offset().top
-   }, 500, function(){
-
-       // when done, add hash to url
-       // (default click behaviour)
-       window.location.hash = hash;
-     });
-
- });
-  </script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
 </body></html>
