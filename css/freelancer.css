@@ -459,11 +459,15 @@ footer .footer-below {
 }
 
 #cohost {
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 
 #about {
   color: white;
   background-color: #18bc9c;
   padding: 40px;
+}
+
+#download-guide {
+  margin-top: 20px;
 }
