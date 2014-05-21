@@ -472,7 +472,9 @@ footer .footer-below {
 }
 
 .navbar-default .navbar-text {
-  color: #A8A8A8
+  color: #A8A8A8;
+  margin-top: 16px;
+  margin-bottom: 0px;
 }
 
 @media(min-width: 768px) {
