@@ -1,6 +1,3 @@
-$('#countdown').countdown('2014/10/03', function(event) {
-      $(this).html(event.strftime('%w weeks %d days <br /> %H:%M:%S'))
-    })
     $(function() {
       var objDistance = $('#navigation').offset().top;
       $(window).scroll(function() {

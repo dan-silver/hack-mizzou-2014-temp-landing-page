@@ -125,13 +125,6 @@ form.signup input  {
   border-radius: 0;
   border: none;
 }
-form.signup button.btn {
-  font-weight: 700;
-}
-form.signup input.form-control:focus {
-  border-color: #fd680e;
-}
-
 
 /* wrapper */
 
@@ -191,4 +184,8 @@ p.copyright {
 
 #navigation.navbar-fixed-top .btn-group:first-child {
   border-radius: 0 0 0 5px !important;
+}
+
+.slogan {
+  font-size: 41px;
 }
