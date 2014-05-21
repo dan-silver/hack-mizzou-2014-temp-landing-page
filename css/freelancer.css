@@ -470,3 +470,9 @@ footer .footer-below {
 #download-guide {
   margin-top: 20px;
 }
+
+@media(min-width: 768px) {
+  header .container {
+    padding-bottom: 0px;
+  }
+}
